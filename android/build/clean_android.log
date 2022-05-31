@@ -1,0 +1,38 @@
+
+31.5.2022, 13:27:05
+
+Operating System
+  Name                        = macOS
+  Version                     = 12.4
+  Architecture                = 64bit
+  # CPUs                      = 12
+  Memory                      = 34359738368
+
+Node.js
+  Node.js Version             = 16.15.0
+  npm Version                 = 8.5.5
+
+Titanium CLI
+  CLI Version                 = 5.4.1
+
+Titanium SDK
+  SDK Version                 = 10.2.0
+  SDK Path                    = /Users/marcbender/Library/Application Support/Titanium/mobilesdk/osx/10.2.0
+  Target Platform             = android
+
+Command
+  /usr/local/bin/node /usr/local/bin/ti clean
+
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/.gradle
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/build
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/build.gradle
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/build_android.log
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/gradle
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/gradle.properties
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/gradlew
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/gradlew.bat
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/local.properties
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/module
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/settings.gradle
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/build/ti.constants.gradle
+[DEBUG]  Deleting /Users/marcbender/androidwebrtc/de.marcbender.webrtc/android/dist
