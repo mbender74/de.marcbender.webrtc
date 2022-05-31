@@ -1,0 +1,8 @@
+repositories {
+	maven { url 'https://jitpack.io' }
+}
+android {
+  packagingOptions {
+      exclude 'META-INF/*'
+ }
+}

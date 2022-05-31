@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+	<id>de.marcbender.testapp</id>
+	<name>testapp</name>
+	<version>1.0</version>
+	<publisher>not specified</publisher>
+	<url></url>
+	<description>testapp</description>
+	<copyright>not specified</copyright>
+	<icon>appicon.png</icon>
+	<fullscreen>false</fullscreen>
+	<navbar-hidden>false</navbar-hidden>
+	<analytics>true</analytics>
+	<guid>8956dbd4-0d40-40b8-a78b-f7ec248bb38f</guid>
+	<property name="ti.ui.defaultunit" type="string">dp</property>
+	<property name="run-on-main-thread" type="bool">true</property>
+	<ios>
+		<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+		<use-app-thinning>true</use-app-thinning>
+        <min-ios-ver>13</min-ios-ver>
+
+		<plist>
+			<dict>
+				<key>UISupportedInterfaceOrientations~iphone</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+					<string>UIInterfaceOrientationPortraitUpsideDown</string>
+					<string>UIInterfaceOrientationLandscapeLeft</string>
+					<string>UIInterfaceOrientationLandscapeRight</string>
+				</array>
+				<key>UISupportedInterfaceOrientations~ipad</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+					<string>UIInterfaceOrientationPortraitUpsideDown</string>
+					<string>UIInterfaceOrientationLandscapeLeft</string>
+					<string>UIInterfaceOrientationLandscapeRight</string>
+				</array>
+				<key>UIRequiresPersistentWiFi</key>
+				<false/>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+				<key>UIStatusBarHidden</key>
+				<false/>
+				<key>UIStatusBarStyle</key>
+				<string>UIStatusBarStyleDefault</string>
+				<key>UIBackgroundModes</key>
+              <array>
+                  <string>location</string>
+                  <string>voip</string>
+                  <string>processing</string>
+                  <string>audio</string>
+                  <string>fetch</string>
+                  <string>remote-notification</string>
+              </array>
+
+              <!-- Mapbox configuration -->
+              <key>MGLMapboxAccessToken</key>
+              <string>pk.eyJ1IjoibWFyY2JlbmRlciIsImEiOiJjamxodjZuMzIwNXZrM2tudmJuOHQwNDZpIn0.cznpAuHoxmxMzMvB2BgoLQ</string>
+
+              <!-- General Geolocation permissions -->
+
+                    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+                        <string>Can we access your location?</string>
+                        
+                        <!-- Required for general background location monitoring -->
+                        <key>NSLocationAlwaysUsageDescription</key>
+                        <string>Can we always access your location</string>
+                        
+                        <!-- For iOS 11+, you need "Always and When in Use" even when requesting "Always" -->
+                        <key>NSLocationWhenInUseUsageDescription</key>
+                        <string>Can we access your location when using the app?</string>
+
+                            <key>NSCameraUsageDescription</key>
+                            <string>Darf LookPoint auf Deine Kamera zugreifen um Fotos zu machen?</string>
+
+                             <key>NSRemindersUsageDescription</key>
+                            <string>Darf LookPoint auf Deine Erinnerungen zugreifen um Erinnerungsereignisse einzustellen?</string>
+
+
+                            <key>NSPhotoLibraryUsageDescription</key>
+                            <string>Darf LookPoint auf Dein Fotoablum zugreifen um Dein Voting-Bild zu speichern?</string>
+
+                            <key>NSPhotoLibraryAddUsageDescription</key>
+                            <string>Darf LookPoint auf Dein Fotoablum zugreifen um Dein Voting-Bild zu speichern?</string>
+
+                            <key>NSBluetoothPeripheralUsageDescription</key>
+                            <string>Darf LookPoint Bluetooth verwenden um Dein Voting zu teilen?</string>
+
+                            <key>NSContactsUsageDescription</key>
+                            <string>Darf LookPoint auf Dein Kontakte zugreifen um Dein Voting zu speichern?</string>
+
+                            <key>SRemindersUsageDescription</key>
+                            <string>Darf LookPoint auf Dein Erinnerungen zugreifen um Dein Voting zu speichern?</string>
+
+                            <key>NSCalendarsUsageDescription</key>
+                            <string>Darf LookPoint auf den Kalender zugreifen um Dein Voting zu speichern?</string>
+
+                            <key>NSMicrophoneUsageDescription</key>
+                            <string>LookPoint verwendet nicht Dein Mikrophon innerhalb der App</string>
+
+                            <key>NSMotionUsageDescription</key>
+                            <string>Darf LookPoint auf die Bewegungsensoren zugreifen für App-Effekte?</string>
+
+                            <key>NSAppleMusicUsageDescription</key>
+                            <string>Darf LookPoint auf Medien zugreifen um Soundeffekte abzuspielen?</string>
+
+
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <!-- <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string> -->
+                <key>NSAppTransportSecurity</key>
+                <dict>
+                    <key>NSAllowsArbitraryLoads</key>
+                    <true/>
+					<key>NSExceptionDomains</key>
+                    <dict>
+                        <key>localhost</key>
+                        <dict>
+                            <key>NSTemporaryExceptionAllowsInsecureHTTPSLoads</key>
+                            <false/>
+                            <key>NSIncludesSubdomains</key>
+                            <true/>
+                            <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+                            <true/>
+                            <key>NSTemporaryExceptionMinimumTLSVersion</key>
+                            <string>1.0</string>
+                            <key>NSTemporaryExceptionRequiresForwardSecrecy</key>
+                            <false/>
+                        </dict>
+                    </dict>
+                </dict>
+			</dict>
+		</plist>
+	</ios>
+	
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+               	<uses-sdk>29</uses-sdk>
+                <manifest android:versionCode="3" android:versionName="1.0.0">
+      <uses-sdk android:minSdkVersion="26" android:compileSdkVersion="29" android:targetSdkVersion="30"/>
+                  <supports-screens android:anyDensity="true"
+                        android:xlargeScreens="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+   			           <application android:screenOrientation="fullSensor" android:debuggable="false" android:hardwareAccelerated="true" android:largeHeap="true" android:usesCleartextTraffic="true">
+                          
+
+<activity android:screenOrientation="fullSensor" android:exported="true" android:name=".testappActivity" android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode|density" android:label="@string/app_name" android:theme="@style/Theme.MyTheme.Base" android:alwaysRetainTaskState="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+                    <activity android:screenOrientation="fullSensor"
+                          android:name="org.appcelerator.titanium.TiActivity"
+                          android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true"/>
+                <activity android:screenOrientation="fullSensor"
+                          android:name="org.appcelerator.titanium.TiTranslucentActivity"
+                          android:configChanges="keyboardHidden|orientation|screenSize"
+                          android:theme="@style/Theme.AppCompat.Translucent" android:exported="true"/>
+                <activity android:screenOrientation="fullSensor"
+                          android:name="ti.modules.titanium.ui.android.TiPreferencesActivity"
+                          android:configChanges="screenSize" android:exported="true"/>    
+
+
+
+
+                <!-- <activity
+            android:name="de.marcbender.webrtc.core.voip.CallSingleActivity"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity> -->
+
+        <!-- <activity android:name="de.marcbender.webrtc.CallActivity"
+            android:screenOrientation="fullUser"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:configChanges="orientation|smallestScreenSize|screenSize|screenLayout"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity> -->
+
+
+                          
+                          </application>
+                             <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+        <uses-feature android:glEsVersion="0x00030000" />
+
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 悬浮窗显示 -->
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+      <uses-feature android:name="android.hardware.bluetooth"/>
+      <uses-permission android:name="android.permission.BLUETOOTH"/>
+        <!-- 在 屏幕最顶部显示addview -->
+        <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- To allow starting foreground services on Android P+ - https://developer.android.com/preview/behavior-changes#fg-svc -->
+        <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+        <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+                                <!-- <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+
+	  <uses-permission android:name="android.permission.INTERNET"/>
+      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+      <uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+<uses-permission android:name="android.webkit.PermissionRequest" />
+
+<uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+<uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+
+
+      <uses-feature android:name="android.hardware.camera" android:required="false"/>
+      <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+      <uses-permission android:name="android.permission.CALL_PHONE" android:required="false"/>
+      <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen"/>
+      <uses-feature android:name="android.hardware.bluetooth"/>
+      <uses-permission android:name="android.permission.BLUETOOTH"/>
+      -->
+                </manifest>
+                <property name="ti.android.compilejs" type="bool">true</property>
+                <property name="ti.deploytype">production</property>
+        </android>
+
+	<modules>
+	    <module platform="android">ti.playservices</module>
+		        <module>de.marcbender.webrtc</module>
+    <module platform="android" version="1.0.3">ti.bottomsheet</module>
+
+		        <!-- <module>ti.listviewextension</module>
+		        <module>ti.imageviewextension</module>
+		        <module>ti.labelextension</module>
+
+	        <module>de.marcbender.sortablegrid</module>
+	        <module>de.marcbender.pdfreader</module> -->
+	</modules>
+	<deployment-targets>
+		<target device="macos">true</target>
+		<target device="android">true</target>
+		<target device="ipad">true</target>
+		<target device="iphone">true</target>
+	</deployment-targets>
+    <sdk-version>10.2.0</sdk-version>
+</ti:app>

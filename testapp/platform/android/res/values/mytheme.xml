@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyTheme.Base" parent="@style/Theme.Titanium.Light.NoTitleBar">
+      <item name="android:windowBackground">@drawable/background</item>
+      <item name="colorPrimaryDark">@color/primary_dark</item>
+       <item name="windowNoTitle">true</item>
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:windowActionBar">false</item>
+       <item name="windowActionBar">false</item>
+      <item name="android:windowFullscreen">false</item>
+      <item name="android:windowTranslucentStatus">false</item>
+      <item name="android:windowTranslucentNavigation">false</item>
+      <item name="android:enforceNavigationBarContrast">false</item>
+      <item name="android:enforceStatusBarContrast">false</item>
+      <item name="android:textColorPrimary">@color/textprimary</item>
+      <item name="android:statusBarColor">@android:color/transparent</item>
+      <item name="android:windowLightStatusBar">false</item>
+      <item name="android:navigationBarColor">@android:color/transparent</item>
+      <item name="android:fitsSystemWindows">true</item>
+      <item name="android:windowContentOverlay">@null</item>
+      <item name="android:textCursorDrawable">@null</item>
+      <item name="bottomSheetTheme">@style/Theme.BottomSheet</item>
+      <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+      <item name="android:fadeScrollbars">true</item>
+      <item name="android:scrollbarFadeDuration">1000</item>
+      <item name="android:scrollbarDefaultDelayBeforeFade">1000</item>
+      <item name="android:colorBackgroundFloating">@color/dialogbackground</item>
+    </style>
+
+    <style name="Theme.MyTheme.Main" parent="@style/Theme.Titanium.Light.NoTitleBar">
+      <item name="android:windowBackground">@drawable/backgroundmain</item>
+      <item name="colorPrimaryDark">@color/primary_dark</item>
+       <item name="windowNoTitle">true</item>
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:windowActionBar">false</item>
+       <item name="windowActionBar">false</item>
+      <item name="android:windowFullscreen">false</item>
+      <item name="android:windowTranslucentStatus">false</item>
+      <item name="android:windowTranslucentNavigation">false</item>
+      <item name="android:enforceNavigationBarContrast">false</item>
+      <item name="android:enforceStatusBarContrast">false</item>
+      <item name="android:textColorPrimary">@color/textprimary</item>
+      <item name="android:statusBarColor">@android:color/transparent</item>
+      <item name="android:windowLightStatusBar">false</item>
+      <item name="android:navigationBarColor">@android:color/transparent</item>
+      <item name="android:fitsSystemWindows">true</item>
+      <item name="android:windowContentOverlay">@null</item>
+      <item name="android:textCursorDrawable">@null</item>
+      <item name="bottomSheetTheme">@style/Theme.BottomSheet</item>
+      <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+      <item name="android:fadeScrollbars">true</item>
+      <item name="android:scrollbarFadeDuration">1000</item>
+      <item name="android:scrollbarDefaultDelayBeforeFade">1000</item>
+      <item name="android:colorBackgroundFloating">@color/dialogbackground</item>
+    </style>
+
+    
+    
+    <style name="Theme.MyTheme.Win" parent="@style/Theme.Titanium.Light.NoTitleBar">
+      <!-- <item name="android:windowBackground">@android:color/transparent</item> -->
+      <item name="android:windowBackground">@drawable/backgroundmain</item>
+      <item name="colorPrimaryDark">@color/primary_dark</item>
+           <item name="android:textColorPrimary">@color/textprimary</item>
+     <item name="android:colorPrimaryDark">@color/primary_dark</item>
+     <item name="windowNoTitle">true</item>
+     <item name="android:windowNoTitle">true</item>
+     <item name="android:windowActionBar">false</item>
+     <item name="windowActionBar">false</item>
+       <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+      <item name="android:windowLightStatusBar">false</item>
+      <item name="android:navigationBarColor">@android:color/transparent</item>
+      <item name="android:windowFullscreen">false</item>
+      <item name="android:fitsSystemWindows">true</item>
+      <item name="android:windowContentOverlay">@null</item>
+      <item name="android:textCursorDrawable">@null</item>
+      <item name="bottomSheetTheme">@style/Theme.BottomSheet</item>
+      <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+      <item name="android:fadeScrollbars">true</item>
+      <item name="android:scrollbarFadeDuration">1000</item>
+      <item name="android:scrollbarDefaultDelayBeforeFade">1000</item>
+      <item name="android:colorBackgroundFloating">@color/dialogbackground</item>
+      <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+      <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    
+    <style name="CaptureTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowBackground">@color/primary_child</item>
+        <item name="windowNoTitle">true</item>
+         <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowAnimationStyle">@style/ScanAnimation</item>
+        <item name="android:colorBackgroundFloating">@color/dialogbackground</item>
+
+      </style>
+    
+    <style name="Theme.App.MaterialDialogAlert" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:background">@color/dialogbackground</item>
+        <item name="android:colorPrimaryDark">@color/dialogbackground</item>
+
+      </style>
+    
+    
+    <style name="Theme.BottomSheet" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+         <item name="windowNoTitle">true</item>
+         <item name="windowActionBar">false</item>
+         <item name="android:windowIsFloating">false</item>
+         <item name="android:windowTranslucentStatus">true</item>
+         <item name="android:windowTranslucentNavigation">true</item>
+         <item name="android:statusBarColor">@color/primary_child</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="bottomSheetDragSensitivity">25%</item>
+        <item name="bottomSheetDividerColor">@color/divider_dark</item>
+        <item name="bottomSheetDimAmount">30%</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheetAnimation</item>
+    </style>
+    <style name="BottomSheetAnimation">
+            <item name="android:windowEnterAnimation">@anim/show_bottom_sheet_animation</item>
+            <item name="android:windowExitAnimation">@anim/hide_bottom_sheet_animation</item>
+    </style>
+    <style name="ScanAnimation">
+            <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+            <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="Theme.Titanium.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="android:background">@color/dialogbackground</item>
+            <item name="android:colorPrimaryDark">@color/dialogbackground</item>
+    </style>
+    <style name="Theme.Titanium.Dialog.Error" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="android:background">@color/dialogbackground</item>
+            <item name="android:colorPrimaryDark">@color/dialogbackground</item>
+    </style>
+</resources>
