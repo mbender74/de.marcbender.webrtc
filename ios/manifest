@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: arm64 x86_64
+mac:true 
+description: ti.webrtc
+author: Marc Bender
+license: Specify your license
+copyright: Copyright (c) 2022 by Your Company
+# these should not be edited
+name: ti.webrtc
+moduleid: de.marcbender.webrtc
+guid: 152cecd8-b326-4512-bbd7-2d7a1a675540
+platform: iphone
+minsdk: 10.1.1.GA
