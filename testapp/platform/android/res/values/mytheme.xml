@@ -19,7 +19,6 @@
       <item name="android:fitsSystemWindows">true</item>
       <item name="android:windowContentOverlay">@null</item>
       <item name="android:textCursorDrawable">@null</item>
-      <item name="bottomSheetTheme">@style/Theme.BottomSheet</item>
       <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
       <item name="android:fadeScrollbars">true</item>
       <item name="android:scrollbarFadeDuration">1000</item>
@@ -46,7 +45,6 @@
       <item name="android:fitsSystemWindows">true</item>
       <item name="android:windowContentOverlay">@null</item>
       <item name="android:textCursorDrawable">@null</item>
-      <item name="bottomSheetTheme">@style/Theme.BottomSheet</item>
       <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
       <item name="android:fadeScrollbars">true</item>
       <item name="android:scrollbarFadeDuration">1000</item>
@@ -76,7 +74,6 @@
       <item name="android:fitsSystemWindows">true</item>
       <item name="android:windowContentOverlay">@null</item>
       <item name="android:textCursorDrawable">@null</item>
-      <item name="bottomSheetTheme">@style/Theme.BottomSheet</item>
       <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
       <item name="android:fadeScrollbars">true</item>
       <item name="android:scrollbarFadeDuration">1000</item>
@@ -109,30 +106,6 @@
       </style>
     
     
-    <style name="Theme.BottomSheet" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="colorPrimaryDark">@color/primary_dark</item>
-         <item name="windowNoTitle">true</item>
-         <item name="windowActionBar">false</item>
-         <item name="android:windowIsFloating">false</item>
-         <item name="android:windowTranslucentStatus">true</item>
-         <item name="android:windowTranslucentNavigation">true</item>
-         <item name="android:statusBarColor">@color/primary_child</item>
-        <item name="android:windowFullscreen">false</item>
-        <item name="android:fitsSystemWindows">true</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:layout_centerInParent">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="bottomSheetDragSensitivity">25%</item>
-        <item name="bottomSheetDividerColor">@color/divider_dark</item>
-        <item name="bottomSheetDimAmount">30%</item>
-        <item name="android:windowAnimationStyle">@style/BottomSheetAnimation</item>
-    </style>
-    <style name="BottomSheetAnimation">
-            <item name="android:windowEnterAnimation">@anim/show_bottom_sheet_animation</item>
-            <item name="android:windowExitAnimation">@anim/hide_bottom_sheet_animation</item>
-    </style>
     <style name="ScanAnimation">
             <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
             <item name="android:windowExitAnimation">@android:anim/fade_out</item>
